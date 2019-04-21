@@ -199,7 +199,6 @@ main(int argc, char** argv)
             }
           } else if (jstring->chars[z].cnt == -1) {
             if (istring->chars[z].cnt != -1) {
-              xored = istring->chars[z].ch ^ first_str[z] ^ second_str[z];
               xored = jstring->chars[z].ch ^ first_str[z] ^ second_str[z];
               istring->chars[z].ch = xored;
               istring->chars[z].cnt = -1;
